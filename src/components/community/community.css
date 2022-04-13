@@ -1,0 +1,47 @@
+.community {
+  padding: 1rem;
+}
+
+.community .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.community-content h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+}
+
+.community-content h2 svg {
+  font-size: 6rem;
+  margin-right: 15px;
+}
+
+.community-content p {
+  max-width: 90%;
+  text-align: center;
+  margin: 1rem auto;
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  .community .container {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 768px) {
+  .community-content h2 {
+    font-size: 1.7rem;
+    padding: 1.5rem 0;
+    text-align: center;
+  }
+
+  .community-content h2 svg {
+    margin-right: 5px;
+  }
+}

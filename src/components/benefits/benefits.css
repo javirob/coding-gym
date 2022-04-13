@@ -1,0 +1,29 @@
+.benefits {
+  background-color: var(--color-primary-6);
+  padding: 2rem 0;
+}
+
+.benefits .container {
+  display: flex;
+  gap: 1rem;
+}
+
+.benefit-item {
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .benefits .container {
+    flex-direction: column;
+  }
+
+  .benefit-item {
+    border-bottom: 2px dashed var(--color-primary-1);
+    padding: 2rem 1rem;
+  }
+
+  .benefit-item:last-child {
+    border-bottom: none;
+  }
+}

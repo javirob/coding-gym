@@ -1,0 +1,19 @@
+.navbar {
+  flex: 1;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: var(--color-secondary-1);
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+}

@@ -1,0 +1,49 @@
+.hamburguer-btn {
+  display: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  z-index: 10;
+  transition: var(--transition);
+  transform: translateY(4px);
+}
+
+.hamburguer-1,
+.hamburguer-2,
+.hamburguer-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-secondary-1);
+  transform: rotate(0);
+  transition: var(--transition);
+  border-radius: 10px;
+}
+
+.hamburguer-2 {
+  transform: translateY(7px);
+}
+.hamburguer-3 {
+  transform: translateY(14px);
+}
+
+.open .hamburguer-1 {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+.open .hamburguer-2 {
+  display: none;
+}
+.open .hamburguer-3 {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+@media (max-width: 768px) {
+  .hamburguer-btn {
+    display: block;
+  }
+}
